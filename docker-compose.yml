@@ -19,7 +19,7 @@ services:
 
     privileged: true
     restart: always
-    container_name: pd1
+    container_name: tidb-pd1
 
   pd2:
     image: pingcap/pd
@@ -39,7 +39,7 @@ services:
 
     privileged: true
     restart: always
-    container_name: pd2
+    container_name: tidb-pd2
 
   pd3:
     image: pingcap/pd
@@ -59,7 +59,7 @@ services:
 
     privileged: true
     restart: always
-    container_name: pd3
+    container_name: tidb-pd3
 
   tikv1:
     image: pingcap/tikv
@@ -83,7 +83,7 @@ services:
 
     privileged: true
     restart: always
-    container_name: tikv1
+    container_name: tidb-tikv1
 
   tikv2:
     image: pingcap/tikv
@@ -107,7 +107,7 @@ services:
 
     privileged: true
     restart: always
-    container_name: tikv2
+    container_name: tidb-tikv2
 
   tikv3:
     image: pingcap/tikv
@@ -131,7 +131,7 @@ services:
 
     privileged: true
     restart: always
-    container_name: tikv3
+    container_name: tidb-tikv3
 
   tidb:
     image: pingcap/tidb
@@ -153,4 +153,4 @@ services:
 
     privileged: true
     restart: always
-    container_name: tidb
+    container_name: tidb-tidb
